@@ -5,3 +5,7 @@ Diplomado en Desarrollo de Aplicaciones Orientada a la Nube
 ```sh
 > cd <folder path>
 > git clone https://github.com/Dhernandez04/diplomado.git
+
+## Autores
+ Deimer Hernandez de la rosa.
+ Manuel Narvaez Mendoz.
