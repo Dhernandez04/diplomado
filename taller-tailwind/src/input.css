@@ -4,6 +4,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&family=Rubik:wght@600&display=swap');
+
+@layer base {
+    body {
+        font-family: 'Readex Pro', sans-serif;
+    }
+}
+
 .botones{
     background-color: aqua;
 } 
@@ -26,3 +34,34 @@ h3{
 .table-color-fila{
     @apply px-6 py-4 whitespace-nowrap text-sm text-slate-600;
 } 
+
+@layer components {
+
+    .page-tittle {
+        @apply text-center text-white font-semibold bg-green-400 px-1.5 rounded-md mb-4
+    }
+
+    .card {
+        @apply bg-white text-gray-700 w-72 min-h-[10rem]
+    }
+
+    .ref {
+        @apply px-3 py-1 rounded-full text-xs bg-gray-100
+    }
+
+    .titulo-curso {
+        @apply font-semibold text-2xl overflow-ellipsis overflow-hidden whitespace-nowrap
+    }
+
+    .descuento {
+        @apply bg-green-400 px-1.5 rounded-md text-xs text-white    
+    }
+    
+    .boton-abir {
+        @apply bg-yellow-500/80 hover:bg-yellow-500/90 px-6 py-2 rounded-md text-white font-medium tracking-wider transition
+    }
+
+    .icono {
+        @apply flex-grow flex justify-center items-center bg-gray-300/50 hover:bg-gray-300/80 transition rounded-md
+    }
+}
