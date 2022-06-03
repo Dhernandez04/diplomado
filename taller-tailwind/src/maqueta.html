@@ -8,7 +8,7 @@
     <link href="../dist/output.css" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
-<body>
+<body class="overflow-hiddenc">
     <nav class="bg-indigo-500">
         <div class="container py-2 mx-auto px-10 flex flex-wrap items-center justify-between">
             
@@ -93,13 +93,13 @@
 
     <div class="drawer drawer-mobile">
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content">
+        <div class="drawer-content overflow-hidden">
           <!-- Page content here -->
           
           
     
-        <div class="py-5">
-            <div class="bg-white container mx-auto px-5 py-4 rounded-xl">
+        <div class="py-5 overflow-hidden">
+            <div class="bg-white container overflow-hidden">
                 
                 <h1 class="text-center">Mis Cursos</h1>
                  
@@ -107,7 +107,7 @@
                     Fija el ancho del lemento al punto de interrupci√≥n. <strong>mx-auto</strong> centra el container
                 </p>
     
-                <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-5">
+                <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-5 overflow-hidden">
                     <div>
                         <div class="shadow-lg p-3">
                             <div><img src="images/proyecto-excel-financiero.webp" alt=""></div>
@@ -149,8 +149,143 @@
     
     
             </div>
-        </div>
-    
+     
+                    <!-- Titulo de la pagina -->
+                    <h1 class="page-tittle" title="Unicordoba Cursos">
+                        Unicordoba Cursos
+                    </h1>
+
+                    <div class="grid sm:grid-cols-2 items-center justify-items-center gap-20">
+                        <!-- Card Curso Front-End -->
+                        <div class="card">
+                            <div>
+                                <img src="./images/front-end.jpg" alt="Front End" class="w-full h-full object-cover">
+
+                                <div class="p-5 flex-col gap-3">
+                                    <!-- Referencias -->
+                                    <div class="flex items-center gap-2">
+                                        <spam class="ref">VUE</spam>
+                                        <spam class="ref">Tailwind CSS</spam>
+                                    </div>
+
+                                    <!-- Titulo del cursor -->
+                                    <h2 class="titulo-curso" title="Curso de Front-End">
+                                        Curso de Front-End
+                                    </h2>
+
+                                    <!-- Precio del Curso -->
+                                    <div>
+                                        <span class="text-xl font-bold">
+                                            COP. $50.000
+                                        </span>
+                                        <div class="flex items-center gap-2 mt-1">
+                                            <span class="text-sm line-through opacity-50">
+                                                COP. $100.000
+                                            </span>
+                                            <span class="descuento">
+                                                50% de Descuento
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- CalificaciÛn del curso -->
+                                    <span class="flex items-center mt-1">
+                                        <img src="./images/star.svg" />
+                                        <img src="./images/star.svg" />
+                                        <img src="./images/star.svg" />
+                                        <img src="./images/star-half-fill.svg" />
+                                        <img src="./images/star-no-fill.svg" />
+                                        <spam class="text-xs ml-2 text-gray-500">
+                                            (105 Calificaciones)
+                                        </spam>
+                                    </span>
+
+                                    <!-- Acciones del curso -->
+                                    <div class="mt-5 flex gap-2">
+                                        <button class="boton-abir">
+                                            Inscribir curso
+                                        </button>
+                                        <button class="icono">
+                                            <img class="opacity-40 hover:opacity-50" src="./images/love.svg"
+                                                alt="Calificar" />
+                                        </button>
+                                        <button class="icono">
+                                            <img class="opacity-40 hover:opacity-50" src="./images/eye.svg"
+                                                alt="Calificar" />
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Card Curso Back-End -->
+                        <div class="card">
+                            <div>
+                                <img src="./images/back-end.jpg" alt="Back End" class="w-full h-full object-cover">
+
+                                <div class="p-5 flex-col gap-3">
+                                    <!-- Referencias -->
+                                    <div class="flex items-center gap-2">
+                                        <spam class="ref">PHP</spam>
+                                        <spam class="ref">Laravel</spam>
+                                    </div>
+
+                                    <!-- Titulo del cursor -->
+                                    <h2 class="titulo-curso" title="Curso de Back-End">
+                                        Curso de Back-End
+                                    </h2>
+
+                                    <!-- Precio del Curso -->
+                                    <div>
+                                        <span class="text-xl font-bold">
+                                            COP. $50.000
+                                        </span>
+                                        <div class="flex items-center gap-2 mt-1">
+                                            <span class="text-sm line-through opacity-50">
+                                                COP. $100.000
+                                            </span>
+                                            <span class="descuento">
+                                                50% de Descuento
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- CalificaciÛn del curso -->
+                                    <span class="flex items-center mt-1">
+                                        <img src="./images/star.svg" />
+                                        <img src="./images/star.svg" />
+                                        <img src="./images/star.svg" />
+                                        <img src="./images/star.svg" />
+                                        <img src="./images/star-half-fill.svg" />
+                                        <spam class="text-xs ml-2 text-gray-500">
+                                            (47 Calificaciones)
+                                        </spam>
+                                    </span>
+
+                                    <!-- Acciones del curso -->
+                                    <div class="mt-5 flex gap-2">
+                                        <button class="boton-abir">
+                                            Inscribir curso
+                                        </button>
+                                        <button class="icono">
+                                            <img class="opacity-40 hover:opacity-50" src="./images/love.svg"
+                                                alt="Calificar" />
+                                        </button>
+                                        <button class="icono">
+                                            <img class="opacity-40 hover:opacity-50" src="./images/eye.svg"
+                                                alt="Calificar" />
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
         <footer class="bg-gray-700 text-center text-white py-5 text-sm">
             <div class="flex justify-center"><img src="images/logou2.png" alt=""></div>
             <div>Diplomado en desarrollo de aplicaciones orientadas a la nube</div>
